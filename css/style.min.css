@@ -135,7 +135,7 @@ body._lock {
   flex-direction: column;
 }
 ._container {
-  max-width: 1180px;
+  max-width: 1057px;
   margin: 0px auto;
   padding: 0px 20px;
 }
@@ -680,6 +680,70 @@ ol.counter li::before {
   background: url(" ../img/icons/loading.gif") center/50px no-repeat;
 }
 
+.header__body {
+  height: 114px;
+  display: flex;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 auto;
+}
+.header__button {
+  flex: 0 0 29%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+.menu__item {
+  margin: 0px 10px;
+}
+.menu__link {
+  font-family: Raleway;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #000;
+  line-height: 1.2;
+}
+
+.button {
+  display: inline-block;
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #fcfdfe;
+  border-radius: 10px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  background: #ec5863;
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 992px) {
+  .button:hover {
+    background: #de757c;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+}
+.button_blue {
+  background: #4285f4;
+}
+@media (min-width: 992px) {
+  .button_blue:hover {
+    background: #70a2f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
 .icon-menu {
   display: none;
 }
@@ -735,30 +799,30 @@ ol.counter li::before {
     display: flex;
   }
 }
-.page .breadcrumbs {
+.breadcrumbs {
   overflow: auto;
   margin: 0px 0px 20px 0px;
   height: 20px;
 }
-.page .breadcrumbs__list {
+.breadcrumbs__list {
   display: flex;
   align-items: center;
   white-space: nowrap;
 }
-.page .breadcrumbs__list li {
+.breadcrumbs__list li {
   margin: 0px 10px 0px 0px;
   padding: 0px 20px 0px 0px;
   background: url("../img/icons/arrow_text.png") right/10px no-repeat;
 }
-.page .breadcrumbs__list li:last-child {
+.breadcrumbs__list li:last-child {
   margin: 0px 0px 0px 0px;
   background: none;
 }
-.page .breadcrumbs__link {
+.breadcrumbs__link {
   color: #1ab9ce;
   text-decoration: underline;
 }
-.page .breadcrumbs__item {
+.breadcrumbs__item {
   color: 999px;
   font-weight: 300;
 }
