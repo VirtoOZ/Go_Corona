@@ -120,8 +120,8 @@ h6 {
 
 /*--------------------*/
 body {
-  color: #000;
-  font-size: 14px;
+  color: #616161;
+  font-size: 12px;
 }
 body._lock {
   overflow: hidden;
