@@ -26,11 +26,12 @@ $fontFamily: "Rubik";
 //<ПЕРЕМЕННЫЕ>=================================
 $minWidth: 320;
 $maxWidth: 1400;
-$maxWidthContainer: 1057;
-$md1: $maxWidthContainer + 12; //1192px
-$md2: 992;
-$md3: 768;
-$md4: 640;
+$maxWidthContainer: 1092;
+// $md1: $maxWidthContainer + 12; //1192px
+$md1: $maxWidthContainer; //1092px
+$md2: 991.98;
+$md3: 767.98;
+$md4: 639.98;
 //</ПЕРЕМЕННЫЕ>=================================
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=================================

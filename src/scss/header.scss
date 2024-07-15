@@ -1,16 +1,31 @@
 .header {
 	// .header__container
 	&__container {
+		// position: relative;
 	}
 	// .header__body
 	&__body {
-		height: 114px;
+		min-height: 60px;
 		display: flex;
 		align-items: center;
-		// margin: 37px 0px;
+		position: absolute;
+		width: 100%;
+		z-index: 50;
+		top: 0;
+		left: 0;
+		@media (min-width: ($md2+px)) {
+			height: 114px;
+		}
+		@media (max-width: ($md3+px)) {
+			justify-content: space-between;
+		}
 	}
 	// .header__logo
 	&__logo {
+		@media (max-width: ($md3+px)) {
+			flex: 0 0 40px;
+			overflow: hidden;
+		}
 	}
 	// .header__menu
 	&__menu {
@@ -23,6 +38,7 @@
 		flex: 0 0 29%;
 		display: flex;
 		justify-content: flex-end;
+		align-items: center;
 	}
 }
 //======================================================================
@@ -32,10 +48,20 @@
 		display: flex;
 		align-items: center;
 		padding: 0px 20px;
+		flex-wrap: wrap;
+		@media (max-width: ($md2+px)) {
+			// flex: 0 1 50%;
+		}
 	}
 	// .menu__item
 	&__item {
-		margin: 0px 10px;
+		margin: 0px 20px 0px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+		@media (max-width: ($md2+px)) {
+			// flex: 0 1 50%;
+		}
 	}
 	// .menu__link
 	&__link {
@@ -47,6 +73,19 @@
 		letter-spacing: 1px;
 		color: #000;
 		line-height: 1.2;
+		@media (min-width: ($md2+px)) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	&__body {
+		@media (max-width: ($md3+px)) {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
 	}
 }
 //======================================================================
@@ -68,6 +107,9 @@
 			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 		}
 	}
+	@media (max-width: ($md3+px)) {
+		padding: 10px 20px;
+	}
 	// .button_blue
 	&_blue {
 		background: #4285f4;
@@ -83,15 +125,16 @@
 //BURGER
 .icon-menu {
 	display: none;
-	@media (max-width: ($md2 + px)) {
+	@media (max-width: ($md3 + px)) {
 		display: block;
 		position: relative;
 		width: 30px;
 		height: 18px;
 		top: 0px;
-		left: 10px;
+		left: 0px;
 		cursor: pointer;
 		z-index: 5;
+		margin: 0px 0px 0px 20px;
 		span {
 			transition: all 0.3s ease 0s;
 			-webkit-transition: all 0.3s ease 0s;
@@ -103,7 +146,7 @@
 			height: 2px;
 			top: calc(50% - 1px);
 			left: 0;
-			background-color: #fff;
+			background-color: #000;
 			&:first-child {
 				top: 0;
 			}
