@@ -1,15 +1,15 @@
 .header {
 	// .header__container
 	&__container {
-		// position: relative;
 	}
 	// .header__body
 	&__body {
+		padding: 0px 20px;
 		min-height: 60px;
 		display: flex;
 		align-items: center;
 		position: absolute;
-		width: 100%;
+		min-width: 100%;
 		z-index: 50;
 		top: 0;
 		left: 0;
@@ -18,6 +18,10 @@
 		}
 		@media (max-width: ($md3+px)) {
 			justify-content: space-between;
+			padding: 0 10px;
+		}
+		@media (max-width: ($md4+px)) {
+			padding: 0px 5px;
 		}
 	}
 	// .header__logo
@@ -29,9 +33,13 @@
 	}
 	// .header__menu
 	&__menu {
-		display: flex;
-		justify-content: flex-end;
-		flex: 1 1 auto;
+		@media (min-width: ($md3+px)) {
+			display: flex;
+			justify-content: flex-end;
+			flex: 1 1 auto;
+		}
+		@media (max-width: 479.98px) {
+		}
 	}
 	// .header__button
 	&__button {
@@ -85,6 +93,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
+			height: 100%;
 		}
 	}
 }
@@ -134,7 +143,7 @@
 		left: 0px;
 		cursor: pointer;
 		z-index: 5;
-		margin: 0px 0px 0px 20px;
+		margin: 0px 0px 0px 10px;
 		span {
 			transition: all 0.3s ease 0s;
 			-webkit-transition: all 0.3s ease 0s;
