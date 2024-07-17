@@ -20,19 +20,19 @@
 		@media (min-width: ($md3+px)) {
 		}
 		@media (max-width: ($md3+px)) {
-			&::after {
-				content: "";
-				width: 100%;
-				height: 100%;
-				background-color: #fff;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
 			padding: 0 10px;
 		}
 		@media (max-width: ($md4+px)) {
 			padding: 0px 5px;
+			&::after {
+				content: "";
+				width: 100%;
+				height: 100%;
+				background-color: #fafbfd;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
 		}
 	}
 	// .header__logo
