@@ -11,9 +11,26 @@
 		position: absolute;
 		min-width: 100%;
 		justify-content: space-between;
-		z-index: 50;
+		z-index: 6;
 		top: 0;
 		left: 0;
+		&::after {
+			transition: visibility 0.3s ease 0s;
+			content: "";
+			width: 100%;
+			height: 100%;
+			background-color: #fafbfd;
+			position: absolute;
+			top: 0;
+			left: 0;
+			visibility: hidden;
+		}
+		&._active {
+			&::after {
+				transition: visibility 0.1s ease 0s;
+				visibility: visible;
+			}
+		}
 		@media (min-width: ($md2+px)) {
 			height: 114px;
 		}
@@ -24,15 +41,6 @@
 		}
 		@media (max-width: ($md4+px)) {
 			padding: 0px 5px;
-			&::after {
-				content: "";
-				width: 100%;
-				height: 100%;
-				background-color: #fafbfd;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
 		}
 	}
 	// .header__logo
@@ -60,7 +68,7 @@
 	}
 	// .header__button
 	&__button {
-		flex: 0 0 29%;
+		flex: 0 0 24%;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
@@ -122,7 +130,6 @@
 	&__body {
 		@media (max-width: ($md3+px)) {
 			position: fixed;
-			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
@@ -165,16 +172,19 @@
 	@media (max-width: ($md4+px)) {
 		padding: 8px 16px;
 	}
-	@media (max-width: ($md5+px)) {
-		padding: 7px 14px;
+	&:hover {
+		background-color: #ec5863;
+		box-shadow: 0 0 10px rgba(236, 88, 99, 1);
 	}
+
 	// .button_blue
 	&_blue {
-		background: #4285f4;
+		background-color: #4285f4;
+
 		@media (min-width: ($md2+px)) {
 			&:hover {
-				background: #70a2f1;
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+				background: #5142f4;
+				box-shadow: 0 0 10px rgba(66, 133, 244, 1);
 			}
 		}
 	}

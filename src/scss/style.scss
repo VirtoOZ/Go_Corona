@@ -148,30 +148,39 @@ body {
 	// .get-started__container
 	&__container {
 		padding: 150px 0px 0px 0px;
-
 		position: relative;
+
 		&::before {
 			position: absolute;
-			width: 100%;
+			width: 100vw;
 			height: 100%;
 			background-color: #ec5863;
 			border-radius: 30px 0px 0px 30px;
 			content: "";
-			left: 0;
-			bottom: 0;
-			transform: translate(76%, 0px);
+			top: 0;
+			right: 24%;
+			transform: translate(100%, 0px);
+		}
+		@media (max-width: ($md3+px)) {
+			padding: 70px 0px 0px 0px;
+			&::before {
+				display: none;
+			}
 		}
 	}
+
 	// .get-started__top
 	&__top {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@media (min-width: ($md3+px)) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 	// .get-started__text-block
 	&__text-block {
 		flex: 0 1 47.4%;
-		padding: 0px 20px 0px 0px;
+		padding: 0px 20px 20px 0px;
 	}
 	// .get-started__box
 	&__box {
@@ -182,8 +191,13 @@ body {
 		position: relative;
 		z-index: 2;
 		flex: 0 1 52.6%;
+		text-align: center;
+
 		img {
 			max-width: 100%;
+		}
+		@media (min-width: ($md3+px)) {
+			padding: 0px 10px 0px 0px;
 		}
 	}
 	// .get-started__bottom
@@ -192,6 +206,9 @@ body {
 	// .get-started__watch-vidio
 	&__watch-vidio {
 		padding: 60px 0px 50px 0px;
+		@media (max-width: ($md3+px)) {
+			padding: 30px 0px 30px 0px;
+		}
 	}
 }
 .text-block {
@@ -237,6 +254,7 @@ body {
 	// .watch-vidio__icon
 	&__icon {
 		flex: 0 0 44px;
+		transition: all 0.3s ease 0s;
 		@media (min-width: ($md2+px)) {
 			&:hover {
 				box-shadow: 0 0 10px rgba(66, 133, 244, 1);
