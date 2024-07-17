@@ -926,3 +926,10 @@ ol.counter li::before {
   color: 999px;
   font-weight: 300;
 }
+
+.get-started__top {
+  display: flex;
+}
+.get-started__column {
+  flex: 0 1 50%;
+}

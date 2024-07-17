@@ -136,6 +136,53 @@ body {
 	}
 }
 //======================================================================
+.get-started {
+	// .get-started__container
+	&__container {
+	}
+	// .get-started__top
+	&__top {
+		display: flex;
+	}
+	// .get-started__column
+	&__column {
+		flex: 0 1 50%;
+	}
+	// .get-started__box
+	&__box {
+	}
+	// .get-started__image
+	&__image {
+	}
+	// .get-started__watch-vidio
+	&__watch-vidio {
+	}
+}
+.started-box {
+	// .started-box__title
+	&__title {
+	}
+	// .started-box__text
+	&__text {
+	}
+	// .started-box__button
+	&__button {
+	}
+}
+.watch-vidio {
+	// .watch-vidio__icon
+	&__icon {
+	}
+	// .watch-vidio__body
+	&__body {
+	}
+	// .watch-vidio__title
+	&__title {
+	}
+	// .watch-vidio__subtitle
+	&__subtitle {
+	}
+}
 
 //======================================================================
 //</ОСНОВНОЙ БЛОК>======================================================================
