@@ -6,6 +6,7 @@ if (iconMenu) {//Проверяем есть ли menu__icon
 		document.body.classList.toggle('_lock');//Для Body даем класс Lock для отключения прокрутки
 		iconMenu.classList.toggle('_active');//добавляем класс active menu__icon
 		menuBody.classList.toggle('_active');//добавляем класс active menu__body
+		// _slideToggle(menuBody, 500);
 	});
 };
 //</BURGER>=================================
