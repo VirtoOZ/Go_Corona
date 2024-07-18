@@ -138,6 +138,7 @@ body._lock {
   max-width: 1092px;
   margin: 0px auto;
   padding: 0px 20px;
+  position: relative;
 }
 @media (max-width: 767.98px) {
   ._container {
@@ -682,7 +683,7 @@ ol.counter li::before {
 
 .header__body {
   padding: 0px 20px;
-  min-height: 60px;
+  min-height: 11vw;
   display: flex;
   align-items: center;
   position: absolute;
@@ -706,11 +707,6 @@ ol.counter li::before {
 .header__body._active::after {
   transition: visibility 0.1s ease 0s;
   visibility: visible;
-}
-@media (min-width: 991.98px) {
-  .header__body {
-    height: 114px;
-  }
 }
 @media (max-width: 767.98px) {
   .header__body {
@@ -736,7 +732,7 @@ ol.counter li::before {
   }
 }
 .header__button {
-  flex: 0 0 24%;
+  flex: 0 0 23%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -798,6 +794,7 @@ ol.counter li::before {
     background-color: #ec5863;
     top: -120%;
     transition: top 0.5s ease 0s;
+    overflow: auto;
   }
 }
 @media (max-width: 767.98px) {
@@ -926,7 +923,6 @@ ol.counter li::before {
 }
 .get-started__container {
   padding-top: 150px;
-  position: relative;
 }
 .get-started__container::before {
   position: absolute;
@@ -974,6 +970,9 @@ ol.counter li::before {
   .get-started__image {
     padding: 0px 10px 0px 0px;
   }
+}
+.get-started__bottom {
+  margin: 0px 0px 80px 0px;
 }
 .get-started__watch-vidio {
   padding: 60px 0px 50px 0px;
@@ -1050,4 +1049,17 @@ ol.counter li::before {
   line-height: 126%;
   /* 11.34px */
   letter-spacing: 0.2rem;
+}
+
+.stay-safe__contant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stay-safe__image {
+  flex: 0 1 50%;
+  text-align: center;
+}
+.stay-safe__text-block {
+  flex: 0 1 50%;
 }
