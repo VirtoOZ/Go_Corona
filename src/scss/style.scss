@@ -64,7 +64,7 @@ body {
 	max-width: $maxWidthContainer + px;
 	margin: 0px auto;
 	padding: 0px 20px;
-	position: relative;
+	// position: relative;
 
 	// min-width: 0;
 	@media (max-width: ($md3+px)) {
@@ -147,9 +147,8 @@ body {
 	}
 	// .get-started__container
 	&__container {
-		padding: 150px 0px 0px 0px;
+		padding-top: 150px;
 		position: relative;
-
 		&::before {
 			position: absolute;
 			width: 100vw;
@@ -162,13 +161,12 @@ body {
 			transform: translate(100%, 0px);
 		}
 		@media (max-width: ($md3+px)) {
-			padding: 70px 0px 0px 0px;
+			padding-top: 70px;
 			&::before {
 				display: none;
 			}
 		}
 	}
-
 	// .get-started__top
 	&__top {
 		@media (min-width: ($md3+px)) {
