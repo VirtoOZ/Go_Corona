@@ -64,7 +64,7 @@ body {
 	max-width: $maxWidthContainer + px;
 	margin: 0px auto;
 	padding: 0px 20px;
-	// position: relative;
+	position: relative;
 
 	// min-width: 0;
 	@media (max-width: ($md3+px)) {
@@ -148,7 +148,6 @@ body {
 	// .get-started__container
 	&__container {
 		padding-top: 150px;
-		position: relative;
 		&::before {
 			position: absolute;
 			width: 100vw;
@@ -200,6 +199,7 @@ body {
 	}
 	// .get-started__bottom
 	&__bottom {
+		margin: 0px 0px 80px 0px;
 	}
 	// .get-started__watch-vidio
 	&__watch-vidio {
@@ -286,6 +286,32 @@ body {
 		letter-spacing: 0.2rem;
 	}
 }
-
 //======================================================================
+.stay-safe {
+	// .stay-safe__container
+	&__container {
+	}
+	// .stay-safe__contant
+	&__contant {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	// .stay-safe__image
+	&__image {
+		flex: 0 1 50%;
+		text-align: center;
+		img {
+		}
+	}
+	// .stay-safe__text-block
+	&__text-block {
+		flex: 0 1 50%;
+	}
+	// .stay-safe__box
+	&__box {
+	}
+}
+//======================================================================
+
 //</ОСНОВНОЙ БЛОК>======================================================================
