@@ -297,12 +297,10 @@ body {
 		justify-content: center;
 		align-items: center;
 	}
-	// .stay-safe__image
-	&__image {
+	// .stay-safe__media
+	&__media {
 		flex: 0 1 50%;
 		text-align: center;
-		img {
-		}
 	}
 	// .stay-safe__text-block
 	&__text-block {
@@ -312,6 +310,19 @@ body {
 	&__box {
 	}
 }
+.media-stay-safe {
+	// .media-stay-safe__image
+	&__image {
+		box-shadow: 2px 4px 32px 0px rgba(0, 0, 0, 0.12);
+		// background: rgba(240, 240, 240, 0.49);
+		display: inline-block;
+		border-radius: 16px;
+		&::after {
+			content: "";
+		}
+	}
+}
+
 //======================================================================
 
 //</ОСНОВНОЙ БЛОК>======================================================================
