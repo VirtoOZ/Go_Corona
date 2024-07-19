@@ -137,6 +137,7 @@ body {
 }
 //======================================================================
 .get-started {
+	margin: 0px 0px 80px 0px;
 	// margin: 114px 0px 0px 0px;
 	background-color: #fafbfd;
 	@media (max-width: ($md2+px)) {
@@ -144,6 +145,7 @@ body {
 	}
 	@media (max-width: ($md3+px)) {
 		// margin: 60px 0px 0px 0px;
+		margin: 0px 0px 40px 0px;
 	}
 	// .get-started__container
 	&__container {
@@ -199,7 +201,6 @@ body {
 	}
 	// .get-started__bottom
 	&__bottom {
-		margin: 0px 0px 80px 0px;
 	}
 	// .get-started__watch-vidio
 	&__watch-vidio {
@@ -296,11 +297,17 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@media (max-width: ($md3+px)) {
+			flex-direction: column;
+		}
 	}
 	// .stay-safe__media
 	&__media {
 		flex: 0 1 50%;
 		text-align: center;
+		@media (max-width: ($md3+px)) {
+			margin: 0px 0px 20px 0px;
+		}
 	}
 	// .stay-safe__text-block
 	&__text-block {
@@ -311,14 +318,74 @@ body {
 	}
 }
 .media-stay-safe {
+	width: 371px;
+	padding: 55px 0px 27px 0px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
 	// .media-stay-safe__image
 	&__image {
 		box-shadow: 2px 4px 32px 0px rgba(0, 0, 0, 0.12);
-		// background: rgba(240, 240, 240, 0.49);
 		display: inline-block;
 		border-radius: 16px;
+		position: relative;
+		z-index: 2;
+		transition: box-shadow 0.3s ease 0s;
+		@media (min-width: ($md2+px)) {
+			&:hover {
+				box-shadow: 2px 4px 32px 0px rgba(81, 66, 244, 1);
+				&::after {
+					opacity: 0;
+				}
+			}
+		}
+		img {
+			max-width: 100%;
+			position: relative;
+			z-index: 2;
+		}
 		&::after {
 			content: "";
+			border-radius: 16px;
+			background-color: rgba(240, 240, 240, 0.49);
+			position: absolute;
+			z-index: 1;
+			width: 90%;
+			height: 6%;
+			bottom: -3%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			opacity: 1;
+			transition: opacity 0.3s ease 0s;
+		}
+	}
+	// .media-stay-safe__item
+	&__item {
+		border-radius: 30px;
+		background-color: #ec5863;
+		// .media-stay-safe__item_1
+		&_1 {
+			width: 147px;
+			height: 147px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		// .media-stay-safe__item_2
+		&_2 {
+			width: 77px;
+			height: 77px;
+			position: absolute;
+			bottom: 20%;
+			right: 8.5%;
+		}
+		// .media-stay-safe__item_3
+		&_3 {
+			width: 77px;
+			height: 77px;
+			position: absolute;
+			bottom: 0;
+			left: 8.5%;
 		}
 	}
 }
