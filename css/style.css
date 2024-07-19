@@ -1054,6 +1054,9 @@ ol.counter li::before {
   letter-spacing: 0.2rem;
 }
 
+.stay-safe {
+  margin: 0px 0px 80px 0px;
+}
 .stay-safe__contant {
   display: flex;
   justify-content: center;
@@ -1093,7 +1096,7 @@ ol.counter li::before {
 }
 @media (min-width: 991.98px) {
   .media-stay-safe__image:hover {
-    box-shadow: 2px 4px 32px 0px #5142f4;
+    box-shadow: 2px 4px 32px 0px rgba(81, 66, 244, 0.4);
   }
   .media-stay-safe__image:hover::after {
     opacity: 0;
@@ -1142,4 +1145,99 @@ ol.counter li::before {
   position: absolute;
   bottom: 0;
   left: 8.5%;
+}
+
+.achievements {
+  background-color: #fafbfd;
+}
+.achievements__box {
+  padding: 100px 0px 80px 0px;
+}
+.achievements__decor {
+  position: relative;
+  max-width: 62%;
+  margin: 0px auto;
+}
+@media (max-width: 479.98px) {
+  .achievements__decor {
+    max-width: 90%;
+  }
+}
+.achievements__body {
+  min-height: 117px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 2px 24px 0px rgba(88, 126, 236, 0.15);
+  transition: box-shadow 0.3s ease 0s;
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 991.98px) {
+  .achievements__body:hover {
+    box-shadow: 2px 4px 32px 0px rgba(81, 66, 244, 0.4);
+  }
+}
+@media (max-width: 767.98px) {
+  .achievements__body {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+}
+.achievements__item {
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  .achievements__item {
+    padding: 0px 20px;
+    margin: 0px 0px 20px 0px;
+  }
+  .achievements__item:last-child {
+    margin: 0px 0px 0px 0px;
+  }
+}
+.achievements__title {
+  color: #ec5863;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 5.04px;
+}
+.achievements__subtitle {
+  color: #000;
+  font-family: Rubik;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 4.07px;
+  text-transform: uppercase;
+}
+.achievements__decor-item {
+  border-radius: 30px;
+  background: #ec5863;
+  z-index: 1;
+  position: absolute;
+}
+.achievements__decor-item_1 {
+  border-radius: 16px;
+  width: 65px;
+  height: 65px;
+  bottom: -17%;
+  left: -3%;
+  transform: rotate(-30deg);
+}
+.achievements__decor-item_2 {
+  width: 100px;
+  height: 100px;
+  transform: rotate(105deg);
+  top: -35%;
+  left: 32%;
+}
+.achievements__decor-item_3 {
+  width: 127px;
+  height: 127px;
+  transform: rotate(-30deg);
+  top: 0;
+  right: -8%;
 }
