@@ -29,6 +29,7 @@ isWebp();
 */
 export function iBg() {
 	let ibg = document.querySelectorAll('._ibg');
+	console.log(ibg);
 	for (var i = 0; i < ibg.length; i++) {
 		if (ibg[i].querySelector('img')) {
 			ibg[i].style.backgroundImage =
