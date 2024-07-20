@@ -895,25 +895,16 @@ ol.counter li::before {
     margin: 0px 0px 50px 0px;
   }
 }
-.footer__body {
-  max-height: 66px;
-}
 .footer__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0px 5px;
-}
-.footer__list li {
-  margin: 0px 60px 0px 0px;
 }
 .footer__list li:last-child {
   margin: 0px 0px 0px 0px;
 }
-.footer__link img {
-  max-width: 100%;
+.footer__link {
+  width: 100px;
+  height: 50px;
 }
-
 .page {
   flex: 1 1 auto;
 }
