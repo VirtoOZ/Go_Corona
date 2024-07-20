@@ -109,9 +109,18 @@ body {
 	}
 	// .page__talk-to
 	&__talk-to {
+		padding: 55px 0px 50px 0px;
+		margin: 0px 0px 50px 0px;
+		@media (min-width: ($md2+px)) {
+			padding: 55px 0px 116px 0px;
+			margin: 0px 0px 80px 0px;
+		}
 	}
 	// .page__advantages
 	&__advantages {
+		@media (min-width: ($md3+px)) {
+			margin: 0px 0px 75px 0px;
+		}
 	}
 }
 //======================================================================
@@ -381,7 +390,7 @@ body {
 	}
 	// .achievements__box
 	&__box {
-		padding: 100px 0px 80px 0px;
+		padding: 100px 0px 24px 0px;
 	}
 	// .achievements__decor
 	&__decor {
@@ -448,6 +457,7 @@ body {
 		background: #ec5863;
 		z-index: 1;
 		position: absolute;
+		transform: rotate(-30deg);
 		// .achievements__decor-item_1
 		&_1 {
 			border-radius: 16px;
@@ -455,7 +465,6 @@ body {
 			height: 65px;
 			bottom: -17%;
 			left: -3%;
-			transform: rotate(-30deg);
 		}
 		// .achievements__decor-item_2
 		&_2 {
@@ -469,7 +478,6 @@ body {
 		&_3 {
 			width: 127px;
 			height: 127px;
-			transform: rotate(-30deg);
 			top: 0;
 			right: -8%;
 		}
@@ -538,4 +546,156 @@ body {
 	}
 }
 //======================================================================
+.advantages {
+	// .advantages__container
+	&__container {
+	}
+	// .advantages__title
+	&__title {
+		margin: 0px 0px 45px 0px;
+	}
+	// .advantages__text-block
+	&__text-block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	// .advantages__box
+	&__box {
+		flex: 0 1 800px;
+		text-align: center;
+	}
+	// .__text-block-title
+	&__text-block-title {
+	}
+	// .__text-block-text
+	&__text-block-text {
+		display: inline-block;
+		text-align: center;
+		padding: 0px 60px;
+		@media (max-width: ($md5+px)) {
+			padding: 0px 30px;
+		}
+	}
+	// .advantages__columns-block
+	&__columns-block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media (max-width: ($md3+px)) {
+			flex-wrap: wrap;
+		}
+	}
+	// .advantages__column
+	&__column {
+		margin: 0px 35px;
+		flex: 0 1 33.333%;
+		@media (max-width: ($md2+px)) {
+			margin: 0px 20px;
+		}
+		@media (max-width: ($md3+px)) {
+			margin: 0px 10px;
+		}
+	}
+	// .advantages__item
+	&__item {
+		height: 100%;
+		position: relative;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 35px 0px;
+		border-radius: 8px;
+		background: #fff;
+		box-shadow: 0px 4px 18px 0px rgba(88, 126, 236, 0.18);
+		transition: all 0.3s ease 0s;
+		@media (min-width: ($md2+px)) {
+			&:hover {
+				box-shadow: 0px 4px 18px 0px rgba(81, 66, 244, 0.4);
+			}
+		}
+		@media (max-width: ($md2+px)) {
+			padding: 20px 0px;
+		}
+		@media (max-width: ($md3+px)) {
+			margin: 0px 0px 20px 0px;
+		}
+		@media (max-width: ($md4+px)) {
+			min-width: 200px;
+		}
+	}
+	// .advantages__decor
+	&__decor {
+	}
+	// .advantages__image
+	&__image {
+		flex: 1 1 auto;
+		margin: 0px 0px 58px 0px;
+	}
+	// .advantages__body
+	&__body {
+		flex: 0 0 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0px 18px;
+	}
+	// .advantages__label
+	&__label {
+		color: #000;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 138.5%; /* 22.16px */
+		letter-spacing: 1.28px;
+		margin: 0px 0px 4px 0px;
+		text-align: center;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+	// .advantages__text
+	&__text {
+		text-align: center;
+	}
+	// .advantages__decor-item
+	&__decor-item {
+		border-radius: 16px;
+		background: #ec5863;
+		position: absolute;
+		z-index: 1;
+		transform: rotate(-30deg);
+		width: 66px;
+		height: 66px;
+		// .advantages__decor-item_1
+		&_1 {
+			bottom: -34px;
+			left: -18px;
+		}
+		// .advantages__decor-item_2
+		&_2 {
+			border-radius: 30px;
+			transform: rotate(105deg);
+			width: 100px;
+			height: 100px;
+			top: 40px;
+			right: -50px;
+		}
+		// .advantages__decor-item_3
+		&_3 {
+			border-radius: 30px;
+			width: 130px;
+			height: 130px;
+			bottom: -27px;
+			left: -123px;
+		}
+		// .advantages__decor-item_4
+		&_4 {
+			top: -30px;
+			right: -18px;
+		}
+	}
+}
 //</ОСНОВНОЙ БЛОК>======================================================================
