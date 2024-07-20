@@ -1122,10 +1122,10 @@ ol.counter li::before {
 .media-stay-safe__image {
   box-shadow: 2px 4px 32px 0px rgba(0, 0, 0, 0.12);
   display: inline-block;
-  border-radius: 16px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   transition: box-shadow 0.3s ease 0s;
+  border-radius: 16px;
 }
 @media (min-width: 991.98px) {
   .media-stay-safe__image:hover {
@@ -1368,7 +1368,7 @@ ol.counter li::before {
 .advantages__item {
   height: 100%;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1430,23 +1430,23 @@ ol.counter li::before {
 .advantages__decor-item {
   border-radius: 16px;
   background: #ec5863;
+}
+.advantages__decor-item_1 {
   position: absolute;
   z-index: 1;
-  transform: rotate(-30deg);
+  bottom: -34px;
+  left: -18px;
   width: 66px;
   height: 66px;
 }
-.advantages__decor-item_1 {
-  bottom: -34px;
-  left: -18px;
-}
 .advantages__decor-item_2 {
   border-radius: 30px;
-  transform: rotate(105deg);
   width: 100px;
   height: 100px;
   top: 40px;
   right: -50px;
+  position: absolute;
+  z-index: 1;
 }
 .advantages__decor-item_3 {
   border-radius: 30px;
@@ -1454,8 +1454,14 @@ ol.counter li::before {
   height: 130px;
   bottom: -27px;
   left: -123px;
+  position: absolute;
+  z-index: 1;
 }
 .advantages__decor-item_4 {
+  width: 66px;
+  height: 66px;
   top: -30px;
   right: -18px;
+  position: absolute;
+  z-index: 1;
 }
