@@ -54,8 +54,8 @@ body {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	&.loaded {
-	}
+	// &.loaded {
+	// }
 }
 //</ОБОЛОЧКА>=================================
 
@@ -105,8 +105,8 @@ body {
 		}
 	}
 	// .page__achievements
-	&__achievements {
-	}
+	// &__achievements {
+	// }
 	// .page__talk-to
 	&__talk-to {
 		padding: 55px 0px 50px 0px;
@@ -192,8 +192,8 @@ body {
 		}
 	}
 	// .get-started__bottom
-	&__bottom {
-	}
+	// &__bottom {
+	// }
 	// .get-started__watch-vidio
 	&__watch-vidio {
 		padding: 60px 0px 50px 0px;
@@ -243,8 +243,8 @@ body {
 		}
 	}
 	// .text-block__button
-	&__button {
-	}
+	// &__button {
+	// }
 }
 .watch-vidio {
 	display: inline-flex;
@@ -289,8 +289,8 @@ body {
 //======================================================================
 .stay-safe {
 	// .stay-safe__container
-	&__container {
-	}
+	// &__container {
+	// }
 	// .stay-safe__contant
 	&__contant {
 		display: flex;
@@ -313,8 +313,8 @@ body {
 		flex: 0 1 50%;
 	}
 	// .stay-safe__box
-	&__box {
-	}
+	// &__box {
+	// }
 }
 .media-stay-safe {
 	width: 371px;
@@ -393,8 +393,8 @@ body {
 .achievements {
 	background-color: #fafbfd;
 	// .achievements__container
-	&__container {
-	}
+	// &__container {
+	// }
 	// .achievements__box
 	&__box {
 		padding: 100px 0px 24px 0px;
@@ -538,25 +538,11 @@ body {
 		}
 	}
 }
-.text-block {
-	// .text-block__title
-	&__title {
-		// .text-block__title_blue
-		&_blue {
-		}
-	}
-	// .text-block__text
-	&__text {
-	}
-	// .text-block__button
-	&__button {
-	}
-}
 //======================================================================
 .advantages {
 	// .advantages__container
-	&__container {
-	}
+	// &__container {
+	// }
 	// .advantages__title
 	&__title {
 		margin: 0px 0px 45px 0px;
@@ -576,8 +562,8 @@ body {
 		text-align: center;
 	}
 	// .__text-block-title
-	&__text-block-title {
-	}
+	// &__text-block-title {
+	// }
 	// .__text-block-text
 	&__text-block-text {
 		display: inline-block;
@@ -659,8 +645,8 @@ body {
 		}
 	}
 	// .advantages__item
-	&__item {
-	}
+	// &__item {
+	// }
 }
 .item-advantages {
 	position: relative;
