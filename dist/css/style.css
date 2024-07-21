@@ -134,6 +134,7 @@ body._lock {
   display: flex;
   flex-direction: column;
 }
+
 ._container {
   max-width: 1092px;
   margin: 0px auto;
@@ -1064,6 +1065,7 @@ ol.counter li::before {
     margin: 0px 0px 15px 0px;
   }
 }
+
 .watch-vidio {
   display: inline-flex;
   align-items: center;
@@ -1125,6 +1127,7 @@ ol.counter li::before {
 .stay-safe__text-block {
   flex: 0 1 50%;
 }
+
 .media-stay-safe {
   width: 371px;
   padding: 55px 0px 27px 0px;
@@ -1430,6 +1433,7 @@ ol.counter li::before {
   top: -28px;
   right: -18px;
 }
+
 .item-advantages {
   position: relative;
   z-index: 2;
