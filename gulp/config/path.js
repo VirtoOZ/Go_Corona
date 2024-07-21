@@ -17,7 +17,7 @@ export const path = {
 	// объект путей к исходным файлам
 	src: {
 		js: `${srcFolder}/js/app.js`, //путь к папке c файлом стилей
-		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`, //путь к папке c файлом стилей
+		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,mp4}`, //путь к папке c файлом стилей
 		svg: `${srcFolder}/img/**/*.svg`, //путь к папке c файлом стилей
 		svgicons: `${srcFolder}/svgicons/*.svg`, //путь к папке c файлом стилей
 		scss: `${srcFolder}/scss/style.scss`, //путь к папке c файлом стилей
@@ -32,7 +32,7 @@ export const path = {
 		scss: `${srcFolder}/scss/**/*.scss`, //путь к файлам которые необходимо отслеживать на изменение
 		html: `${srcFolder}/**/*.html`,
 		// html: `${srcFolder}/**/*.pug`, // Для Pug
-		images: `${srcFolder}/img/**/*.+(jpg|jpeg|png|gif|webp|ico|svg)`, //путь к папке c файлом стилей
+		images: `${srcFolder}/img/**/*.+(jpg|jpeg|png|gif|webp|ico|svg|mp4|mpeg)`, //путь к папке c файлом стилей
 		// images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,ico,svg}`, //путь к папке c файлом стилей
 		files: `${srcFolder}/files/**/*.*`, //путь к файлам которые необходимо отслеживать на изменение
 	},
